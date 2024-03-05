@@ -14,7 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<div style="display:block"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aa02606896098" /> </div>
 <div style="display:block"> <img src="https://github-readme-stats.vercel.app/api?username=Aa02606896098&show_icons=true" /> </div>
 <div style="display:block;float:left"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aa02606896098" /> </div>
-<div style="display:block"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aa02606896098" /> </div>
+- 📫 How to reach me: ...
 
