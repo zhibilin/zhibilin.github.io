@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <div style="display:block"> <img src="https://github-readme-stats.vercel.app/api?username=Aa02606896098&show_icons=true" /> </div>
-<div style="display:block"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aa02606896098" /> </div>
+<div style="display:block;float:left"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aa02606896098" /> </div>
 <div style="display:block"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aa02606896098" /> </div>
 <div style="display:block"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Aa02606896098" /> </div>
 <div style="display:block"> <img src="https://visitor-badge.glitch.me/badge?page_id=Aa02606896098" /> </div>
