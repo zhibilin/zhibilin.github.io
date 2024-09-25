@@ -56,7 +56,6 @@ export default hopeTheme({
   },
 
   plugins: {
-    
     copyright: {
       author: "知Code",
       global:true
@@ -106,10 +105,13 @@ export default hopeTheme({
       categoryId: "DIC_kwDOG_Pt2M4COD69",
     },
 
+  
     components: {
        // 你想使用的组件
        components: [
-  
+
+        "ArtPlayer",
+
         "Badge",
         "BiliBili",
         "CodePen",
@@ -147,6 +149,7 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
+
       component: true,
       demo: true,
       include: true,
@@ -172,6 +175,7 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
+
       tasklist: true,
       vPre: true,
    
@@ -195,14 +199,13 @@ export default hopeTheme({
       // playground: {
       //   presets: ["ts", "vue"],
       // },
-
       // Install @vue/repl before enabling it
       // vuePlayground: true,
 
       // Install sandpack-vue3 before enabling it
       // sandpack: true,
     },
-   
+
     // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",

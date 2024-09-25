@@ -30,7 +30,6 @@
     "@vuepress/plugin-redirect": "2.0.0-rc.51",
     "@vuepress/plugin-revealjs": "2.0.0-rc.48",
     "markmap-common": "^0.17.1",
-    "nodejs-jieba": "^0.1.2",
     "vidstack": "^1.12.11",
     "vite": "^5.4.8",
     "vuepress-plugin-search-pro": "2.0.0-rc.54"
