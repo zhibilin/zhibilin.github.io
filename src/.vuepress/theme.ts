@@ -2,12 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import {  zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
-<<<<<<< HEAD
 import { searchProPlugin } from "vuepress-plugin-search-pro";
-=======
-import { searchPlugin } from '@vuepress/plugin-search';
-
->>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -65,7 +60,6 @@ export default hopeTheme({
       author: "知Code",
       global:true
     },
-<<<<<<< HEAD
     markdownTab: true,
     revealjs: true,
     search:  searchProPlugin({
@@ -118,31 +112,6 @@ export default hopeTheme({
 
         "ArtPlayer",
 
-=======
-    search: searchPlugin({
-      locales: {
-        "/": {
-          placeholder: "搜索",
-        },
-      },
-      maxSuggestions: 10,
-      hotKeys: ["java"],
-    }),
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
-    // comment: {
-    //   provider: "Giscus",
-    //   repo: "vuepress-theme-hope/giscus-discussions",
-    //   repoId: "R_kgDOG_Pt2A",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
-    // },
-
-    components: {
-       // 你想使用的组件
-       components: [
-        "ArtPlayer",
->>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
         "Badge",
         "BiliBili",
         "CodePen",
@@ -180,12 +149,6 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-<<<<<<< HEAD
-
-=======
-      
-      codetabs: true,
->>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
       component: true,
       demo: true,
       include: true,
@@ -211,11 +174,6 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-<<<<<<< HEAD
-
-=======
-      tabs: true,
->>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
       tasklist: true,
       vPre: true,
    
@@ -239,15 +197,6 @@ export default hopeTheme({
       // playground: {
       //   presets: ["ts", "vue"],
       // },
-<<<<<<< HEAD
-=======
-    
-      // Install reveal.js before enabling it
-      revealJs: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
-
->>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
       // Install @vue/repl before enabling it
       // vuePlayground: true,
 
