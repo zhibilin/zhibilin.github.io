@@ -11,11 +11,16 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@vuepress/bundler-vite": "next",
+=======
+    "@vuepress/bundler-vite": "2.0.0-rc.15",
+>>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
     "@vuepress/plugin-copyright": "2.0.0-rc.47",
     "@vuepress/plugin-search": "2.0.0-rc.47",
     "echarts": "^5.5.1",
     "flowchart.ts": "^3.0.1",
+<<<<<<< HEAD
     "markmap-lib": "^0.17.1",
     "markmap-toolbar": "^0.17.1",
     "markmap-view": "^0.17.1",
@@ -33,5 +38,16 @@
     "vidstack": "^1.12.11",
     "vite": "^5.4.8",
     "vuepress-plugin-search-pro": "2.0.0-rc.54"
+=======
+    "markmap-lib": "^0.17.0",
+    "markmap-toolbar": "^0.17.0",
+    "markmap-view": "^0.17.0",
+    "mathjax-full": "^3.2.2",
+    "reveal.js": "^5.1.0",
+    "sass-embedded": "^1.79.2",
+    "vue": "^3.5.5",
+    "vuepress": "2.0.0-rc.15",
+    "vuepress-theme-hope": "2.0.0-rc.53"
+>>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
   }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
@@ -7,6 +8,15 @@ import theme from "./theme.js";
 export default defineUserConfig({
 
   base: "/",
+=======
+import { defineUserConfig } from "vuepress";
+
+import theme from "./theme.js";
+
+export default defineUserConfig({
+  base: "/",
+
+>>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
   locales: {
     "/": {
       lang: "zh-CN",
@@ -19,6 +29,7 @@ export default defineUserConfig({
 
   // Enable it with pwa
   shouldPrefetch: false,
+<<<<<<< HEAD
 
   bundler: viteBundler({
     viteOptions: {
@@ -41,4 +52,6 @@ export default defineUserConfig({
     vuePluginOptions: {},
   }),
 
+=======
+>>>>>>> 708fe462470277a5931cb1ba89651af6ad29f7bb
 });
