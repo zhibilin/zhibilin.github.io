@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <!--
-**Aa02606896098/Aa02606896098** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**zhibilin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -14,8 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<div style="display:block"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aa02606896098" /> </div>
-<div style="display:block"> <img src="https://github-readme-stats.vercel.app/api?username=Aa02606896098&show_icons=true" /> </div>
-<div style="display:block;float:left"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aa02606896098" /> </div>
+<div style="display:block"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=zhibilin" /> </div>
+<div style="display:block"> <img src="https://github-readme-stats.vercel.app/api?username=zhibilin&show_icons=true" /> </div>
+<div style="display:block;float:left"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhibilin" /> </div>
 - 📫 How to reach me: ...
 
