@@ -75,3 +75,4 @@ stages:
           artifactDownloadPath: "/home/admin/app/package.tgz"
           executeUser: "root"
           artifact: $[stages.node_build_stage.node_build_job.artifact_upload_step.artifacts.Artifacts_${PIPELINE_ID}]
+
