@@ -14,6 +14,7 @@ tag:
 @tab 核心方法
 ```java
 public class CodeGenerator {
+  
     /**
      * web端生成模板代码
      * @param table    数据库表模型
