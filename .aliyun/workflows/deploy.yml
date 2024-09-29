@@ -1,0 +1,77 @@
+sources:
+  my_repo:
+    type: codeup
+    name: NodeJS示例代码源
+    endpoint: https://atomgit.com/flow-example/node-expressjs.git
+    branch: master
+    triggerEvents:
+      - push
+      - mergeRequestMerged
+    certificate:
+      type: serviceConnection
+      serviceConnection: "xphizc5qut19ybb8"
+stages:
+  java_script_code_scan_stage:
+    name: "测试"
+    jobs:
+      java_script_code_scan_job:
+        name: "JavaScript 代码扫描"
+        steps:
+          java_script_code_scan_step:
+            name: "JavaScript 代码扫描"
+            step: "JavaScriptCodeScan"
+            with:
+              localDependencies: "*"
+              useLocalRules: false
+              customNodeVersion: "20.17.0"
+              incrementalScan: false
+              exclusion: "test/\nbuild/\nnode_modules/\nvendor/\ndist/\n**/*.min.js\n\
+                **/*-min.js\n**/*.bundle.js\n"
+      node_unit_test_job:
+        name: "Node.js 单元测试"
+        steps:
+          node_unit_test_step:
+            name: "Node.js 单元测试"
+            step: "NodeUnitTest"
+            with:
+              reportFile: "mochawesome.json"
+              reportDir: "mochawesome-report"
+              reportIndex: "mochawesome.html"
+              versionType: "predefined"
+              customNodeVersion: "20.17.0"
+              run: "cnpm install && npm run test\n"  
+  node_build_stage:
+    name: "构建"
+    jobs:
+      node_build_job:
+        name: "Node.js 构建"
+        steps:
+          node_build_step:
+            name: "Node.js 构建"
+            step: "NodeBuild"
+            with:
+              versionType: custom
+              customNodeVersion: "20.17.0"
+              run: "cnpm install \n cnpm install pnpm \n pnpm install \n pnpm add  dashjs hls.js \n pnpm add markmap-common \n pnpm run docs:build \n"
+          artifact_upload_step:
+            name: "构建物上传"
+            step: "ArtifactUpload"
+            with:
+              uploadType: flowPublic
+              artifact: "Artifacts_${PIPELINE_ID}"
+              filePath: "."
+  vm_deploy_stage:
+    name: "部署"
+    jobs:
+      vm_deploy_job:
+        name: "主机部署"
+        component: "VMDeploy"
+        with:
+          downloadArtifact: true
+          useEncode: false
+          machineGroup: "UJbvYndeRXdnwFOa"
+          run: "mkdir -p /home/admin/app/docs-zhibilin-coding-app/\n tar zxvf /home/admin/app/package.tgz\
+            \ -C /home/admin/app/docs-zhibilin-coding-app/\n cd /home/admin/app/docs-zhibilin-coding-app/\n sh /deploy.sh restart\n"
+          artifactDownloadPath: "/home/admin/app/package.tgz"
+          executeUser: "root"
+          artifact: $[stages.node_build_stage.node_build_job.artifact_upload_step.artifacts.Artifacts_${PIPELINE_ID}]
