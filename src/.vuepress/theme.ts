@@ -2,16 +2,15 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default hopeTheme({
   hostname: "https://zhibilin.github.io",
   /**
    * // 默认为 GitHub. 同时也可以是一个完整的 URL
-  // repo: 
+  // repo:
   // 自定义仓库链接文字。默认从 `repo` 中自动推断为
   // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
-   */
+*/
 
   repoLabel: "GitHub",
   // 是否在导航栏内显示仓库链接，默认为 `true`
@@ -38,7 +37,7 @@ export default hopeTheme({
 
       // sidebar
       sidebar: zhSidebar,
-
+ 
       footer: "赣ICP备2022003118号-1",
 
       displayFooter: true,
@@ -61,43 +60,11 @@ export default hopeTheme({
   plugins: {
     copyright: {
       author: "知Code",
-      global: true
+      global:true
     },
     markdownTab: true,
     revealjs: true,
-    search: searchProPlugin({
-      // 索引全部内容
-      indexContent: true,
-      indexOptions: {
-        // 使用 nodejs-jieba 进行分词
-        tokenize: (text, fieldName) =>
-          fieldName === "id" ? [text] : cut(text, true),
-      },
-      customFields: [
-        {
-          getter: (page) => page.frontmatter.category,
-          formatter: {
-            "/": "Category: $content",
-            "/zh/": "分类：$content",
-          },
-        },
-        {
-          getter: (page) => page.frontmatter.tag,
-          formatter: {
-            "/": "Tag: $content",
-            "/zh/": "标签：$content",
-          },
-        },
-        {
-          name: "updateTime",
-          getter: (page) => page.data.git?.updateTime.toLocaleString(),
-          formatter: {
-            "/": "Update time: $content",
-            "/zh/": "更新时间：$content",
-          },
-        },
-      ],
-    }),
+    search: true,
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     comment: {
@@ -108,10 +75,10 @@ export default hopeTheme({
       categoryId: "DIC_kwDOG_Pt2M4COD69",
     },
 
-
+  
     components: {
-      // 你想使用的组件
-      components: [
+       // 你想使用的组件
+       components: [
 
         "ArtPlayer",
 
@@ -179,7 +146,7 @@ export default hopeTheme({
       sup: true,
       tasklist: true,
       vPre: true,
-
+   
       // Install chart.js before enabling it
       // chart: true,
 

@@ -1,4 +1,6 @@
 
+
+
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import theme from "./theme.js";
@@ -25,7 +27,6 @@ export default defineUserConfig({
       build: {
         rollupOptions: {
           output: {
-            
             manualChunks: {
               vendor: ['@vuepress/plugin-markdown-tab'
               ,'@vuepress/plugin-redirect'

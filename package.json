@@ -26,12 +26,16 @@
     "vuepress-theme-hope": "2.0.0-rc.56"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vuepress/plugin-markdown-tab": "2.0.0-rc.47",
     "@vuepress/plugin-redirect": "2.0.0-rc.51",
     "@vuepress/plugin-revealjs": "2.0.0-rc.48",
+    "artplayer": "^5.1.7",
     "dashjs": "^4.7.4",
     "hls.js": "^1.5.15",
     "markmap-common": "^0.17.1",
+    "mpegts.js": "^1.7.3",
     "vidstack": "^1.12.11",
     "vite": "^5.4.8"
   }
