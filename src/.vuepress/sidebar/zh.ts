@@ -24,6 +24,18 @@ export const zhSidebar = sidebar({
       link: "note/",
       collapsible: true,
       children: "structure",
+    },{
+      text: "UI",
+      prefix: "ui/",
+      link: "ui/",
+      collapsible: true,
+      children: "structure",
+    },{
+      text: "site",
+      prefix: "site/",
+      link: "site/markdown",
+      collapsible: true,
+      children: "structure",
     },
   ],
 });

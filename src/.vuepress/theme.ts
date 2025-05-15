@@ -17,7 +17,7 @@ export default hopeTheme({
   repoDisplay: true,
   author: {
     name: "知code",
-    url: "https://blog.csdn.net/m0_59709514?spm=1000.2115.3001.5343",
+    url: "https://theme-hope.vuejs.press/zh/guide/markdown/content/tabs.html",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -67,13 +67,13 @@ export default hopeTheme({
     search: true,
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    // comment: {
-    //   provider: "Giscus",
-    //   repo: "vuepress-theme-hope/giscus-discussions",
-    //   repoId: "R_kgDOG_Pt2A",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
-    // },
+    comment: {
+      provider: "Giscus",
+      repo: "vuepress-theme-hope/giscus-discussions",
+      repoId: "R_kgDOG_Pt2A",
+      category: "Announcements",
+      categoryId: "DIC_kwDOG_Pt2M4COD69",
+    },
 
   
     components: {
