@@ -16,7 +16,11 @@ https://www.bilibili.com/video/BV1rp4y1b74U?spm_id_from=333.788.videopod.episode
 ## 认识ps
 ## 文档操作
 
+**文档操作快捷键：**
+
 新建文件  `ctrl+n`
+
+关闭文件  `ctrl+w`
 
 从文件管理器中打开文件  `ctrl+o`
 
@@ -28,6 +32,47 @@ https://www.bilibili.com/video/BV1rp4y1b74U?spm_id_from=333.788.videopod.episode
 
 撤销  `ctrl+z`
 
+**视图操作快捷键：**
+
+放大视图 `ctrl+ '+'`  | 空格键+ `ctrl`       或者`alt`+鼠标中键滚轮
+
+
+缩小视图 `ctrl+ '-'`  | 空格键+ `ctrl+ alt`   或者`alt`+鼠标中键滚轮
+
+缩放工具 `Z`  放大     放大工具 `Z+alt`  缩小
+
+画板适合窗口  `ctrl+0`
+
+实际大小显示 `ctrl+1` 100%显示
+
+抓手工具 `H`  或者 空格键
+
+
+**选择工具快捷键：**
+
+快捷键：`v`
+
+- 选择功能，加选，减选，框选，取消选择
+
+- 调整功能， 缩放，旋转，圆角
+
+- 移动功能，手动拖动，精确移动，复制对象
+
+隐藏显示定界框  `ctrl+shift+b`
+
+
+
+**群组工具快捷键：**
+
+群组：`ctrl+g`
+
+取消群组：`ctrl+shift+g`
+
+**吸管工具快捷键：**
+
+快捷键：`i`
+
+吸取对象颜色属性
 
 ## 移动工具
 
