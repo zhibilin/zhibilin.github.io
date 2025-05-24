@@ -40,6 +40,7 @@ export default defineUserConfig({
           },
         },
       },
+      disableUserPersonalization: true,
     }),
   ],
   theme,
