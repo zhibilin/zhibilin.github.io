@@ -6,6 +6,7 @@ import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://zhibilin.github.io",
+  print: true,
   /**
    * // 默认为 GitHub. 同时也可以是一个完整的 URL
   // repo:
