@@ -21,7 +21,7 @@ export default defineUserConfig({
         docsearchPlugin({
       appId: '9QVS7BT1LD',
       apiKey: '8a328d798e98ba5699e78b30fc0b2da9',
-      indexName: 'index_docs',
+      indexName: 'note',
       locales: {
         '/': {
           placeholder: 'Search Documentation',
