@@ -2,8 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
-
-
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 export default hopeTheme({
   hostname: "https://zhibilin.github.io",
   print: true,
@@ -28,8 +27,31 @@ export default hopeTheme({
 
   docsDir: "src",
   fullscreen: true,
+  docsearchPlugin: {
+    appId: "9QVS7BT1LD",
+    apiKey: "8a328d798e98ba5699e78b30fc0b2da9",
+    indexName: "note",
+    locales: {
+      "/": {
+        placeholder: "Search Documentation",
+        translations: {
+          button: {
+            buttonText: "Search Documentation",
+          },
+        },
+      },
+      "/zh/": {
+        placeholder: "搜索文档",
+        translations: {
+          button: {
+            buttonText: "搜索文档",
+          },
+        },
+      },
+    },
+    disableUserPersonalization: true,
+  },
   locales: {
-
     /**
      * Chinese locale config
      */
@@ -39,7 +61,7 @@ export default hopeTheme({
 
       // sidebar
       sidebar: zhSidebar,
- 
+
       footer: "赣ICP备2022003118号-1",
 
       displayFooter: true,
@@ -62,13 +84,12 @@ export default hopeTheme({
   plugins: {
     copyright: {
       author: "知Code",
-      global:true
+      global: true,
     },
     markdownTab: true,
     revealjs: true,
-    
+
     // search: true,
-  
 
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
@@ -80,11 +101,9 @@ export default hopeTheme({
       categoryId: "DIC_kwDOG_Pt2M4COD69",
     },
 
-  
     components: {
-       // 你想使用的组件
-       components: [
-
+      // 你想使用的组件
+      components: [
         "ArtPlayer",
 
         "Badge",
@@ -97,7 +116,7 @@ export default hopeTheme({
         "VPBanner",
         "VPCard",
         "VidStack",
-        "XiGua",
+  
       ],
     },
 
@@ -151,7 +170,7 @@ export default hopeTheme({
       sup: true,
       tasklist: true,
       vPre: true,
-   
+
       // Install chart.js before enabling it
       // chart: true,
 
