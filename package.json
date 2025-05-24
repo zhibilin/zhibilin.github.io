@@ -38,6 +38,7 @@
     "hls.js": "^1.5.15",
     "markmap-common": "^0.17.1",
     "mpegts.js": "^1.7.3",
+    "pnpm": "^10.11.0",
     "vidstack": "^1.12.11",
     "vite": "^5.4.8"
   }
