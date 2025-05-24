@@ -4,7 +4,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import theme from "./theme.js";
-
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 export default defineUserConfig({
 
@@ -16,7 +16,32 @@ export default defineUserConfig({
       description: "",
     },
   },
-
+   plugins: [
+    //todo  search  详情看最近收到的QQ邮件有没有收到appid啥的
+        docsearchPlugin({
+      appId: '9QVS7BT1LD',
+      apiKey: '8a328d798e98ba5699e78b30fc0b2da9',
+      indexName: 'index_docs',
+      locales: {
+        '/': {
+          placeholder: 'Search Documentation',
+          translations: {
+            button: {
+              buttonText: 'Search Documentation',
+            },
+          },
+        },
+        '/zh/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档',
+            },
+          },
+        },
+      },
+    }),
+  ],
   theme,
 
   // Enable it with pwa

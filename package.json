@@ -13,6 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "next",
     "@vuepress/plugin-copyright": "2.0.0-rc.47",
+    "@vuepress/plugin-docsearch": "^2.0.0-rc.47",
     "@vuepress/plugin-search": "2.0.0-rc.47",
     "echarts": "^5.5.1",
     "flowchart.ts": "^3.0.1",
@@ -23,6 +24,7 @@
     "sass-embedded": "^1.79.3",
     "vue": "^3.5.8",
     "vuepress": "2.0.0-rc.15",
+    "vuepress-plugin-flexsearch-pro": "^1.0.3",
     "vuepress-theme-hope": "2.0.0-rc.56"
   },
   "dependencies": {

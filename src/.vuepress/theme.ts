@@ -3,6 +3,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
+
 export default hopeTheme({
   hostname: "https://zhibilin.github.io",
   /**
@@ -64,7 +65,10 @@ export default hopeTheme({
     },
     markdownTab: true,
     revealjs: true,
-    search: true,
+    
+    // search: true,
+  
+
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     comment: {
