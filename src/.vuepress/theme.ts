@@ -69,11 +69,9 @@ export default hopeTheme({
     // 搜索插件
     docsearch: {
       appId: "9QVS7BT1LD",
-      apiKey: "98951d2bd5224dbf2c4b1d335fcc611a",
-      indexName: "zhibilinio",
-      insights: true,
-      container: "### REPLACE ME WITH A CONTAINER (e.g. div) ###",
-      debug: false
+   apiKey: "4c786b4841a86dd6abc2a78bd669dcc4",
+      indexName: "docs",
+     
     },
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
