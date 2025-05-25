@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
-import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+
 export default hopeTheme({
   hostname: "https://zhibilin.github.io",
   print: true,
@@ -27,30 +27,7 @@ export default hopeTheme({
 
   docsDir: "src",
   fullscreen: true,
-  docsearchPlugin: {
-    appId: "9QVS7BT1LD",
-    apiKey: "8a328d798e98ba5699e78b30fc0b2da9",
-    indexName: "note",
-    locales: {
-      "/": {
-        placeholder: "Search Documentation",
-        translations: {
-          button: {
-            buttonText: "Search Documentation",
-          },
-        },
-      },
-      "/zh/": {
-        placeholder: "搜索文档",
-        translations: {
-          button: {
-            buttonText: "搜索文档",
-          },
-        },
-      },
-    },
-    disableUserPersonalization: true,
-  },
+
   locales: {
     /**
      * Chinese locale config
@@ -90,7 +67,110 @@ export default hopeTheme({
     revealjs: true,
 
     // search: true,
-
+    docsearch: {
+      appId: "9QVS7BT1LD",
+      apiKey: "8a328d798e98ba5699e78b30fc0b2da9",
+      indexName: "note",
+      rateLimit: 8,
+      startUrls: ["https://zhibilin.github.io/"],
+      sitemaps: ["https://zhibilin.github.io/sitemap.xml"],
+      ignoreCanonicalTo: true,
+      exclusionPatterns: [],
+      discoveryPatterns: ["https://zhibilin.github.io/**"],
+      schedule: "at 02:00 every 1 day",
+      actions: [
+        {
+          indexName: "note",
+          pathsToMatch: ["https://zhibilin.github.io/**"],
+          recordExtractor: ({ $, helpers }) => {
+            // 以下是适用于 vuepress-theme-hope 的默认选项选项
+            return helpers.docsearch({
+              recordProps: {
+                lvl0: {
+                  selectors: [".vp-sidebar-link.active", "[vp-content] h1"],
+                  defaultValue: "Documentation",
+                },
+                lvl1: "[vp-content] h1",
+                lvl2: "[vp-content] h2",
+                lvl3: "[vp-content] h3",
+                lvl4: "[vp-content] h4",
+                lvl5: "[vp-content] h5",
+                lvl6: "[vp-content] h6",
+                content: "[vp-content] p, [vp-content] li",
+              },
+              recordVersion: "v3",
+            });
+          },
+        },
+      ],
+      initialIndexSettings: {
+        YOUR_INDEX_NAME: {
+          attributesForFaceting: ["type", "lang"],
+          attributesToRetrieve: ["hierarchy", "content", "anchor", "url"],
+          attributesToHighlight: ["hierarchy", "hierarchy_camel", "content"],
+          attributesToSnippet: ["content:10"],
+          camelCaseAttributes: ["hierarchy", "hierarchy_radio", "content"],
+          searchableAttributes: [
+            "unordered(hierarchy_radio_camel.lvl0)",
+            "unordered(hierarchy_radio.lvl0)",
+            "unordered(hierarchy_radio_camel.lvl1)",
+            "unordered(hierarchy_radio.lvl1)",
+            "unordered(hierarchy_radio_camel.lvl2)",
+            "unordered(hierarchy_radio.lvl2)",
+            "unordered(hierarchy_radio_camel.lvl3)",
+            "unordered(hierarchy_radio.lvl3)",
+            "unordered(hierarchy_radio_camel.lvl4)",
+            "unordered(hierarchy_radio.lvl4)",
+            "unordered(hierarchy_radio_camel.lvl5)",
+            "unordered(hierarchy_radio.lvl5)",
+            "unordered(hierarchy_radio_camel.lvl6)",
+            "unordered(hierarchy_radio.lvl6)",
+            "unordered(hierarchy_camel.lvl0)",
+            "unordered(hierarchy.lvl0)",
+            "unordered(hierarchy_camel.lvl1)",
+            "unordered(hierarchy.lvl1)",
+            "unordered(hierarchy_camel.lvl2)",
+            "unordered(hierarchy.lvl2)",
+            "unordered(hierarchy_camel.lvl3)",
+            "unordered(hierarchy.lvl3)",
+            "unordered(hierarchy_camel.lvl4)",
+            "unordered(hierarchy.lvl4)",
+            "unordered(hierarchy_camel.lvl5)",
+            "unordered(hierarchy.lvl5)",
+            "unordered(hierarchy_camel.lvl6)",
+            "unordered(hierarchy.lvl6)",
+            "content",
+          ],
+          distinct: true,
+          attributeForDistinct: "url",
+          customRanking: [
+            "desc(weight.pageRank)",
+            "desc(weight.level)",
+            "asc(weight.position)",
+          ],
+          ranking: [
+            "words",
+            "filters",
+            "typo",
+            "attribute",
+            "proximity",
+            "exact",
+            "custom",
+          ],
+          highlightPreTag:
+            '<span class="algolia-docsearch-suggestion--highlight">',
+          highlightPostTag: "</span>",
+          minWordSizefor1Typo: 3,
+          minWordSizefor2Typos: 7,
+          allowTyposOnNumericTokens: false,
+          minProximity: 1,
+          ignorePlurals: true,
+          advancedSyntax: true,
+          attributeCriteriaComputedByMinProximity: true,
+          removeWordsIfNoResults: "allOptional",
+        },
+      },
+    },
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     comment: {
@@ -116,7 +196,6 @@ export default hopeTheme({
         "VPBanner",
         "VPCard",
         "VidStack",
-  
       ],
     },
 

@@ -1,13 +1,9 @@
-
-
-
-import { viteBundler } from '@vuepress/bundler-vite'
-import { defineUserConfig } from 'vuepress'
+import { viteBundler } from "@vuepress/bundler-vite";
+import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-
+import { docsearch } from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
-
   base: "/",
   locales: {
     "/": {
@@ -16,9 +12,7 @@ export default defineUserConfig({
       description: "",
     },
   },
-   plugins: [
-    
-   
+  plugins: [
   ],
   theme,
 
@@ -31,10 +25,11 @@ export default defineUserConfig({
         rollupOptions: {
           output: {
             manualChunks: {
-              vendor: ['@vuepress/plugin-markdown-tab'
-              ,'@vuepress/plugin-redirect'
-              ,'@vuepress/plugin-revealjs'
-              // ,'markmap-common'
+              vendor: [
+                "@vuepress/plugin-markdown-tab",
+                "@vuepress/plugin-redirect",
+                "@vuepress/plugin-revealjs",
+                // ,'markmap-common'
               ], // 手动拆分 vendor chunks
               // markmap: ['markmap-common'], // 手动拆分 markmap-common
             },
@@ -45,5 +40,4 @@ export default defineUserConfig({
     },
     vuePluginOptions: {},
   }),
-
 });
