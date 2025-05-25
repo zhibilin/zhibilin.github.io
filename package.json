@@ -13,7 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.23",
     "@vuepress/plugin-copyright": "2.0.0-rc.105",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.104",
+    "@vuepress/plugin-slimsearch": "2.0.0-rc.105",
     "echarts": "^5.6.0",
     "flowchart.ts": "^3.0.1",
     "markmap-lib": "^0.17.2",
@@ -23,7 +23,6 @@
     "sass-embedded": "^1.89.0",
     "vue": "^3.5.14",
     "vuepress": "2.0.0-rc.23",
-    "vuepress-plugin-flexsearch-pro": "1.0.3",
     "vuepress-theme-hope": "2.0.0-rc.88"
   },
   "dependencies": {

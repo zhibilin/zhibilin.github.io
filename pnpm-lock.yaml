@@ -54,9 +54,9 @@ importers:
       '@vuepress/plugin-copyright':
         specifier: 2.0.0-rc.105
         version: 2.0.0-rc.105(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
-      '@vuepress/plugin-docsearch':
-        specifier: 2.0.0-rc.104
-        version: 2.0.0-rc.104(@algolia/client-search@5.25.0)(search-insights@2.17.3)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
+      '@vuepress/plugin-slimsearch':
+        specifier: 2.0.0-rc.105
+        version: 2.0.0-rc.105(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
       echarts:
         specifier: ^5.6.0
         version: 5.6.0
@@ -84,12 +84,9 @@ importers:
       vuepress:
         specifier: 2.0.0-rc.23
         version: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)
-      vuepress-plugin-flexsearch-pro:
-        specifier: 1.0.3
-        version: 1.0.3
       vuepress-theme-hope:
         specifier: 2.0.0-rc.88
-        version: 2.0.0-rc.88(@vuepress/plugin-docsearch@2.0.0-rc.104(@algolia/client-search@5.25.0)(search-insights@2.17.3)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)))(@vuepress/plugin-revealjs@2.0.0-rc.105(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)))(artplayer@5.2.3)(dashjs@4.7.4)(echarts@5.6.0)(flowchart.ts@3.0.1)(hls.js@1.6.2)(katex@0.16.22)(markdown-it@14.1.0)(markmap-lib@0.17.2(markmap-common@0.17.1))(markmap-toolbar@0.17.2(markmap-common@0.17.1))(markmap-view@0.17.2(markmap-common@0.17.1))(mathjax-full@3.2.2)(mpegts.js@1.8.0)(sass-embedded@1.89.0)(vidstack@1.12.13)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
+        version: 2.0.0-rc.88(4eae9e26de721c9f66e3d7ba4d52ccd1)
 
 packages:
 
@@ -1507,6 +1504,11 @@ packages:
     peerDependencies:
       vuepress: 2.0.0-rc.23
 
+  '@vuepress/plugin-slimsearch@2.0.0-rc.105':
+    resolution: {integrity: sha512-+7eIZ+UevivD+FmTGEi63n9DXFgjPVFVLouIViCKzGkUBdspOGIYwp2vHYVNMxAi+MJsN0XJMM0mKJeLRgxP3g==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.23
+
   '@vuepress/plugin-theme-data@2.0.0-rc.103':
     resolution: {integrity: sha512-pHkCf7VZJDlVVE+LkDTmHMTdDxYkaUTNbglgTI1QoTq8cMpOb/M8BaBDtb8//DC2gbNTgx/x6wsPogwm0K45+w==}
     peerDependencies:
@@ -2000,9 +2002,6 @@ packages:
   find-up@4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
     engines: {node: '>=8'}
-
-  flexsearch@0.6.32:
-    resolution: {integrity: sha512-EF1BWkhwoeLtbIlDbY/vDSLBen/E5l/f1Vg7iX5CDymQCamcx1vhlc3tIZxIDplPjgi0jhG37c67idFbjg+v+Q==}
 
   flowchart.ts@3.0.1:
     resolution: {integrity: sha512-bBlP6IAe6A/Y9UXb27YhbGS39fTaGLHx1dyjNazIc0d6ntVGC2eIHP6siUQj9PMEX1M5vKXbTecpi+dn4Bhhjg==}
@@ -2738,6 +2737,10 @@ packages:
     resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==}
     engines: {node: '>=14.16'}
 
+  slimsearch@2.2.2:
+    resolution: {integrity: sha512-C+E3y4sKKzPzcOyty0G9CjXdLvY0ZWPSCQCDNqSv/P6+rvoL6RiHvuwr0wnxf0QgdbdyNiJQ0w7OdudHoabpCg==}
+    engines: {node: '>=18.18.0'}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -3011,9 +3014,6 @@ packages:
       vidstack:
         optional: true
 
-  vuepress-plugin-flexsearch-pro@1.0.3:
-    resolution: {integrity: sha512-PAGRixTeZRVyJCyO4zPRmdsm4TfuA8Q2Iiu+P+Cbx6M0vARjFW9VZbQseyl77d/kP0w4OjhXE/AnkixwDczQZQ==}
-
   vuepress-plugin-md-enhance@2.0.0-rc.88:
     resolution: {integrity: sha512-829rH7XUkRD9yYdnJxDmUleRx+mCXxO7A7xtQAXBlZbqX1dvB540iB1Uh8DYJCf8F/LmAmg7R2ftZjUqfhUy3Q==}
     engines: {node: '>= 20.6.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
@@ -3192,6 +3192,7 @@ snapshots:
       - '@algolia/client-search'
       - algoliasearch
       - search-insights
+    optional: true
 
   '@algolia/autocomplete-plugin-algolia-insights@1.17.9(@algolia/client-search@5.25.0)(algoliasearch@5.25.0)(search-insights@2.17.3)':
     dependencies:
@@ -3200,17 +3201,20 @@ snapshots:
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
+    optional: true
 
   '@algolia/autocomplete-preset-algolia@1.17.9(@algolia/client-search@5.25.0)(algoliasearch@5.25.0)':
     dependencies:
       '@algolia/autocomplete-shared': 1.17.9(@algolia/client-search@5.25.0)(algoliasearch@5.25.0)
       '@algolia/client-search': 5.25.0
       algoliasearch: 5.25.0
+    optional: true
 
   '@algolia/autocomplete-shared@1.17.9(@algolia/client-search@5.25.0)(algoliasearch@5.25.0)':
     dependencies:
       '@algolia/client-search': 5.25.0
       algoliasearch: 5.25.0
+    optional: true
 
   '@algolia/client-abtesting@5.25.0':
     dependencies:
@@ -3218,6 +3222,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/client-analytics@5.25.0':
     dependencies:
@@ -3225,8 +3230,10 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
-  '@algolia/client-common@5.25.0': {}
+  '@algolia/client-common@5.25.0':
+    optional: true
 
   '@algolia/client-insights@5.25.0':
     dependencies:
@@ -3234,6 +3241,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/client-personalization@5.25.0':
     dependencies:
@@ -3241,6 +3249,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/client-query-suggestions@5.25.0':
     dependencies:
@@ -3248,6 +3257,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/client-search@5.25.0':
     dependencies:
@@ -3255,6 +3265,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/ingestion@1.25.0':
     dependencies:
@@ -3262,6 +3273,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/monitoring@1.25.0':
     dependencies:
@@ -3269,6 +3281,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/recommend@5.25.0':
     dependencies:
@@ -3276,18 +3289,22 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   '@algolia/requester-browser-xhr@5.25.0':
     dependencies:
       '@algolia/client-common': 5.25.0
+    optional: true
 
   '@algolia/requester-fetch@5.25.0':
     dependencies:
       '@algolia/client-common': 5.25.0
+    optional: true
 
   '@algolia/requester-node-http@5.25.0':
     dependencies:
       '@algolia/client-common': 5.25.0
+    optional: true
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -3463,7 +3480,8 @@ snapshots:
 
   '@bufbuild/protobuf@2.5.0': {}
 
-  '@docsearch/css@3.9.0': {}
+  '@docsearch/css@3.9.0':
+    optional: true
 
   '@docsearch/js@3.9.0(@algolia/client-search@5.25.0)(search-insights@2.17.3)':
     dependencies:
@@ -3475,6 +3493,7 @@ snapshots:
       - react
       - react-dom
       - search-insights
+    optional: true
 
   '@docsearch/react@3.9.0(@algolia/client-search@5.25.0)(search-insights@2.17.3)':
     dependencies:
@@ -3486,6 +3505,7 @@ snapshots:
       search-insights: 2.17.3
     transitivePeerDependencies:
       - '@algolia/client-search'
+    optional: true
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -4524,6 +4544,7 @@ snapshots:
       - react-dom
       - search-insights
       - typescript
+    optional: true
 
   '@vuepress/plugin-git@2.0.0-rc.104(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))':
     dependencies:
@@ -4777,6 +4798,18 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vuepress/plugin-slimsearch@2.0.0-rc.105(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.105(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
+      '@vueuse/core': 13.2.0(vue@3.5.14)
+      cheerio: 1.0.0
+      chokidar: 3.6.0
+      slimsearch: 2.2.2
+      vue: 3.5.14
+      vuepress: 2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)
+    transitivePeerDependencies:
+      - typescript
+
   '@vuepress/plugin-theme-data@2.0.0-rc.103(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))':
     dependencies:
       '@vue/devtools-api': 7.7.6
@@ -4837,6 +4870,7 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.25.0
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
+    optional: true
 
   ansi-regex@5.0.1: {}
 
@@ -5358,8 +5392,6 @@ snapshots:
       locate-path: 5.0.0
       path-exists: 4.0.0
 
-  flexsearch@0.6.32: {}
-
   flowchart.ts@3.0.1:
     dependencies:
       '@types/raphael': 2.3.9
@@ -5860,7 +5892,8 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact@10.26.7: {}
+  preact@10.26.7:
+    optional: true
 
   prismjs@1.30.0: {}
 
@@ -6064,7 +6097,8 @@ snapshots:
 
   sax@1.4.1: {}
 
-  search-insights@2.17.3: {}
+  search-insights@2.17.3:
+    optional: true
 
   section-matter@1.0.0:
     dependencies:
@@ -6096,6 +6130,8 @@ snapshots:
       sax: 1.4.1
 
   slash@5.1.0: {}
+
+  slimsearch@2.2.2: {}
 
   source-map-js@1.2.1: {}
 
@@ -6171,7 +6207,8 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-debounce@4.0.0: {}
+  ts-debounce@4.0.0:
+    optional: true
 
   tslib@2.3.0: {}
 
@@ -6318,10 +6355,6 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-plugin-flexsearch-pro@1.0.3:
-    dependencies:
-      flexsearch: 0.6.32
-
   vuepress-plugin-md-enhance@2.0.0-rc.88(echarts@5.6.0)(flowchart.ts@3.0.1)(markdown-it@14.1.0)(markmap-lib@0.17.2(markmap-common@0.17.1))(markmap-toolbar@0.17.2(markmap-common@0.17.1))(markmap-view@0.17.2(markmap-common@0.17.1))(sass-embedded@1.89.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)):
     dependencies:
       '@mdit/plugin-container': 0.18.0(markdown-it@14.1.0)
@@ -6357,7 +6390,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.88(@vuepress/plugin-docsearch@2.0.0-rc.104(@algolia/client-search@5.25.0)(search-insights@2.17.3)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)))(@vuepress/plugin-revealjs@2.0.0-rc.105(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)))(artplayer@5.2.3)(dashjs@4.7.4)(echarts@5.6.0)(flowchart.ts@3.0.1)(hls.js@1.6.2)(katex@0.16.22)(markdown-it@14.1.0)(markmap-lib@0.17.2(markmap-common@0.17.1))(markmap-toolbar@0.17.2(markmap-common@0.17.1))(markmap-view@0.17.2(markmap-common@0.17.1))(mathjax-full@3.2.2)(mpegts.js@1.8.0)(sass-embedded@1.89.0)(vidstack@1.12.13)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14)):
+  vuepress-theme-hope@2.0.0-rc.88(4eae9e26de721c9f66e3d7ba4d52ccd1):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.105(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.103(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
@@ -6400,6 +6433,7 @@ snapshots:
     optionalDependencies:
       '@vuepress/plugin-docsearch': 2.0.0-rc.104(@algolia/client-search@5.25.0)(search-insights@2.17.3)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
       '@vuepress/plugin-revealjs': 2.0.0-rc.105(markdown-it@14.1.0)(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
+      '@vuepress/plugin-slimsearch': 2.0.0-rc.105(vuepress@2.0.0-rc.23(@vuepress/bundler-vite@2.0.0-rc.23(@types/node@22.15.21)(sass-embedded@1.89.0)(yaml@2.8.0))(vue@3.5.14))
       sass-embedded: 1.89.0
     transitivePeerDependencies:
       - '@vue/repl'

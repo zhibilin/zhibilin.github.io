@@ -1,8 +1,7 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-
+import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 export default defineUserConfig({
   base: "/",
   locales: {
@@ -13,14 +12,36 @@ export default defineUserConfig({
     },
   },
   plugins: [
-    docsearchPlugin({
-      // // 搜索插件 配置项
-        appId: "9QVS7BT1LD",
-        apiKey: "81b838a454686cdd2c100c4340c0b5bc",
- 
-        indexName: "zhibilinio",
+     slimsearchPlugin({
+      // 配置项
+     indexContent:true,
+       customFields: [
+        {
+          name: 'author',
+          getter: (page) => page.frontmatter.author,
+          formatter: '作者：$content',
+        },
+        {
+          name: 'category',
+          getter: (page) => page?.frontmatter?.category,
+          formatter: '分类：$content',
+        },
+        {
+          name: 'tag',
+          getter: (page) => page?.frontmatter?.tag,
+          formatter: '标签：$content',
+        },
+        {
+          name: 'updateTime',
+          getter: (page) => page.data.git?.updateTime?.toLocaleString(),
+          formatter: {
+            '/': 'Update time: $content',
+            '/zh/': '更新时间：$content',
+          },
+        },
+      ],
     }),
-   
+
   
   ],
   theme,
