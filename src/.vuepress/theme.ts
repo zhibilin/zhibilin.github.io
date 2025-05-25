@@ -68,9 +68,10 @@ export default hopeTheme({
 
     // 搜索插件
     docsearch: {
-      appId: "9QVS7BT1LD",
-   apiKey: "4c786b4841a86dd6abc2a78bd669dcc4",
-      indexName: "docs",
+       appId: "9QVS7BT1LD",
+  apiKey: "81b838a454686cdd2c100c4340c0b5bc",
+ 
+      indexName: "zhibilinio",
      
     },
     // Note: This is for testing ONLY!
