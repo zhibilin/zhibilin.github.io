@@ -1,7 +1,7 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { docsearch } from "@vuepress/plugin-docsearch";
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
   base: "/",
@@ -13,7 +13,15 @@ export default defineUserConfig({
     },
   },
   plugins: [
-    
+    docsearchPlugin({
+      // // 搜索插件 配置项
+        appId: "9QVS7BT1LD",
+        apiKey: "81b838a454686cdd2c100c4340c0b5bc",
+ 
+        indexName: "zhibilinio",
+    }),
+   
+  
   ],
   theme,
 

@@ -66,14 +66,6 @@ export default hopeTheme({
     markdownTab: true,
     revealjs: true,
 
-    // 搜索插件
-    docsearch: {
-       appId: "9QVS7BT1LD",
-  apiKey: "81b838a454686cdd2c100c4340c0b5bc",
- 
-      indexName: "zhibilinio",
-     
-    },
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     comment: {
