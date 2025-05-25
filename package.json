@@ -13,8 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.23",
     "@vuepress/plugin-copyright": "2.0.0-rc.105",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.105",
-    "@vuepress/plugin-search": "2.0.0-rc.105",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.104",
     "echarts": "^5.6.0",
     "flowchart.ts": "^3.0.1",
     "markmap-lib": "^0.17.2",

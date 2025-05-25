@@ -56,7 +56,7 @@ function del(target, key) {
   delete target[key];
 }
 
-// node_modules/.store/@vueuse+shared@10.11.1/node_modules/@vueuse/shared/index.mjs
+// node_modules/.store/@vueuse+shared@10.11.1/node_modules/@vueuse/index.mjs
 function computedEager(fn, options) {
   var _a;
   const result = shallowRef();
