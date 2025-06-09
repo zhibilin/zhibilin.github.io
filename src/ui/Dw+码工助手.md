@@ -12,7 +12,7 @@ tag:
 
 # 关于电商设计
 
-常见快捷键：先用参考线分割详情页，保存为web格式
+常见快捷键：先用参考线分割详情页，保存为web格式(`ctrl+enter+shift+s`)
 
 常见电商平台：淘宝 天猫 拼多多  京东   苏宁易购 蘑菇街
 
@@ -63,7 +63,10 @@ https://huaban.com/boards/47241358 详情页参考
 
 
 https://xiangying.tmall.com/category.htm?spm=a1z10.1-b-s.w5001-24501422666.14.80697abcl6Xlhn&search=y&scene=taobao_shop
+
+
 #### 淘宝主图
+
 尺寸：800*800 像素  750*1000像素  各五张
 
 #### sku图
