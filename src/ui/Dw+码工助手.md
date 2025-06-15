@@ -118,6 +118,7 @@ https://xiangying.tmall.com/category.htm?spm=a1z10.1-b-s.w5001-24501422666.14.80
 https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5095674824336932952&sourceFrom=search_a
 
 
+一般来说：详情页做完后的按照分区参考线裁剪每一部分最高不超过2000像素
 
 服装详情排版顺序
 详情产品海报-产品优势（设计点优势-颜色优势-版型优势-面料优势）-产品信息-模特展示-平铺细节展示
