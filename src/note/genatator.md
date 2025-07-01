@@ -4,9 +4,9 @@ icon: fab fa-markdown
 order: 2
 cover: https://github.githubassets.com/assets/inbox-zero-86555dddc82e.svg
 category:
-  - Java
+  - note
 tag:
-  - demo
+  - demo sample
 ---
 ## 一、代码生成器
 :::tabs 

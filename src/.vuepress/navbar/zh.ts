@@ -2,19 +2,19 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   {
-    text: "个人笔记",
+    text: "程序文档",
     icon: "circle-info",
     link: "note/server"
 
   },
   {
-    text: "代码示例",
+    text: "UI/UX 设计",
     icon: "person-chalkboard",
-    link: "sample/processor",
+    link: "ui/Ps",
   },
   {
-    text: "API文档",
+    text: "站点示例",
     icon: "fab fa-markdown",
-    link: "api/dynamic-table-config"
+    link: "site/markdown"
   },
 ]);

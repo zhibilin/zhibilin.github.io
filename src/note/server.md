@@ -3,9 +3,9 @@ title: 从零搭建服务器配置
 icon: fab fa-markdown
 order: 2
 category:
-  - 运维
+  - note
 tag:
-  - 云服务器
+  - demo sample
 ---
 ## 前情提要
 ###  关于防火墙的一些命令

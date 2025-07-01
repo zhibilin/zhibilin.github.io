@@ -6,7 +6,7 @@ cover:
 category:
   - docs
 tag:
-  - api
+  - api文档
 ---
 
 ## 更新配置

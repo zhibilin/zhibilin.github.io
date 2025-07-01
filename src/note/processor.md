@@ -4,10 +4,9 @@ icon: fab fa-markdown
 order: 2
 cover: https://user-images.githubusercontent.com/19292210/60553863-044dd200-9cea-11e9-987e-7db84449f215.png	
 category:
-  - Java
+  - note
 tag:
-  - APT 
-  - AOT
+  - demo sample
 ---
 
 :::tabs

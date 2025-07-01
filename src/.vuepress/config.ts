@@ -14,6 +14,7 @@ export default defineUserConfig({
   plugins: [
      slimsearchPlugin({
       // 配置项
+    
      indexContent:true,
        customFields: [
         {
