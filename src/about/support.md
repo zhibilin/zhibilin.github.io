@@ -2,29 +2,31 @@
 title: Support && Contact
 icon: fab fa-markdown
 order: 2
-cover: https://github.githubassets.com/assets/inbox-zero-86555dddc82e.svg
+#cover: https://github.githubassets.com/assets/inbox-zero-86555dddc82e.svg
 category:
-  - note
-tag:
-  - demo sample
+  - documentation
 ---
 
 ## Contact
-> For all inquiries, please contact us via one of the following channels:
 
-- phone: +86 123456789
-- email: 110@EMAIL
-## Support
+<Share :services="['telegram']" />
+If you want to create a free account, contact sales, or have any inquiries, please contact us via X:
+> Telegram: <a>https://t.me/Node1_me</a>
+
+## Questions
 
 
-## Pricing & Rate Limits
+###  
+:::tip How Do I Keep the Connection Alive?
+To keep your TCP connection to our server alive and avoid reconnecting, you can periodically send a simple request to the /ping endpoint.
+> **Strategy:**
 
-> Simple, scalable pricing. Upgrade/Downgrade freely.
+We recommend using the `/ping ` endpoint, This endpoint is lightweight, fast, and designed specifically to help maintain your connection.
+```shell
+GET /ping
+```
 
-|Trial| Entry | Intermediate | Advance  | Enterprise |
-| --- | --- | --- | --- | --- |
-| 1 TX per 10s | 5 TPS | 20 TPS | 50 TPS |100+ TPS  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+:::
 
-### Questions
+
+
