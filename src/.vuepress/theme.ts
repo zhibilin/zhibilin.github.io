@@ -4,7 +4,7 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://zhibilin.github.io",
+  hostname: "https://node1.me",
   print: true,
   /**
    * // 默认为 GitHub. 同时也可以是一个完整的 URL
@@ -39,7 +39,7 @@ logo: "https://github.com/zhibilin/zhibilin.github.io/blob/main/src/.vuepress/pu
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "赣ICP备",
+      footer: "浙ICP备",
 
       displayFooter: true,
 
