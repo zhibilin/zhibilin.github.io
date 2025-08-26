@@ -1,1 +1,41 @@
 // place your custom styles here
+// 网站全文灰色滤镜css
+// html {
+//    filter: grayscale(100%);//IE浏览器
+//   -webkit-filter: grayscale(100%);//谷歌浏览器
+//   -moz-filter: grayscale(100%);//火狐
+//   -ms-filter: grayscale(100%);
+//   -o-filter: grayscale(100%);
+//   filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+//   -webkit-filter: grayscale(1);//谷歌浏览器
+// }
+html {
+  filter: grayscale(100%);//IE浏览器
+  -webkit-filter: grayscale(100%);//谷歌浏览器
+  -moz-filter: grayscale(100%);//火狐
+  -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(1);//谷歌浏览器
+ }
+
+// Blue Tint with Opacity
+/*
+html {
+  filter: sepia(30%) hue-rotate(180deg) saturate(1.5);
+  -webkit-filter: sepia(30%) hue-rotate(180deg) saturate(1.5);
+  -moz-filter: sepia(30%) hue-rotate(180deg) saturate(1.5);
+  -ms-filter: sepia(30%) hue-rotate(180deg) saturate(1.5);
+  -o-filter: sepia(30%) hue-rotate(180deg) saturate(1.5);
+}
+*/
+/*
+//Purple Tint Combination
+html {
+  filter: hue-rotate(270deg) saturate(1.3) brightness(1.05);
+  -webkit-filter: hue-rotate(270deg) saturate(1.3) brightness(1.05);
+  -moz-filter: hue-rotate(270deg) saturate(1.3) brightness(1.05);
+  -ms-filter: hue-rotate(270deg) saturate(1.3) brightness(1.05);
+  -o-filter: hue-rotate(270deg) saturate(1.3) brightness(1.05);
+}
+*/
