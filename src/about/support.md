@@ -9,9 +9,9 @@ category:
 
 ## Contact
 
-<Share :services="['telegram']" />
+
 If you want to create a free account, contact sales, or have any inquiries, please contact us via X:
-> Telegram: <a>https://t.me/Node1_me</a>
+> <Share :services="['telegram']" /><a>https://t.me/Node1_me</a>
 
 ## Questions
 
