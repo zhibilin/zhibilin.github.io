@@ -8,7 +8,34 @@ category:
 tag:
   - quick_start
 --- 
-## Flow Sample
+## Key Flow Sample
+
+### Go
+
+### Staking
+
+<!-- ↓ :
+```flow:preset
+
+start=>start: start
+input=>inputoutput: 
+operation1=>operation: choose node
+operation2=>operation: choose staking
+operation3=>operation: input amount of sql
+operation4=>operation: choose type of staking
+end=>end: 结束
+
+start->input
+input->operation1
+operation1->operation2
+operation2->operation3
+operation3->operation4
+peration4->end
+```
+
+preset 是可选的 -->
+
+
 
 ## Java Sample Code
 

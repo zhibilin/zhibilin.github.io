@@ -22,7 +22,7 @@ tag:
 ### module member
 ### module finance
 #### wallet
-#### pay
-##### payment
+#### payment
+##### paypal
 ##### 支付宝
 ### module trade
