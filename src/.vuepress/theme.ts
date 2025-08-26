@@ -24,7 +24,7 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands",
 
   // logo: "https://vuepress.vuejs.org/images/hero.png",
-logo: "https://vuepress.vuejs.org/images/hero.png",
+logo: "https://github.com/zhibilin/zhibilin.github.io/blob/main/src/.vuepress/public/gray_logo.png?raw=true",
   docsDir: "src",
   fullscreen: true,
 
