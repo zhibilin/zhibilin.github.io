@@ -3,11 +3,26 @@ import { sidebar } from "vuepress-theme-hope";
 export const zhSidebar = sidebar({
 
   "/": [
-    "",
+    
+       {
+      text: "api",
+      prefix: "api/",
+      link: "api/index",
+      collapsible: true,
+      children: "structure",
+    },
+     {
+      text: "deploy",
+      prefix: "deploy/",
+      link: "deploy/index",
+      collapsible: true,
+      children: "structure",
+    },
+
     {
-      text: "代码示例",
-      prefix: "note/",
-      link: "note/",
+      text: "sample",
+      prefix: "sample/",
+      link: "sample/",
       collapsible: true,
       children: "structure",
     },
@@ -19,5 +34,6 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: "structure",
     },
+
   ],
 });

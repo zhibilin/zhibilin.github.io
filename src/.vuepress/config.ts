@@ -6,8 +6,8 @@ export default defineUserConfig({
   base: "/",
   locales: {
     "/": {
-      lang: "zh-CN",
-      title: "docs",
+      lang: "EN-US",
+      title: "NODE1",
       description: "",
     },
   },

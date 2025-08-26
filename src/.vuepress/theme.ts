@@ -17,14 +17,14 @@ export default hopeTheme({
   // 是否在导航栏内显示仓库链接，默认为 `true`
   repoDisplay: true,
   author: {
-    name: "知code",
-    url: "https://theme-hope.vuejs.press/zh/guide/markdown/content/tabs.html",
+    name: "NODE1 bLOG",
+    url: "node1.me",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://vuepress.vuejs.org/images/hero.png",
-
+  // logo: "https://vuepress.vuejs.org/images/hero.png",
+logo: "https://vuepress.vuejs.org/images/hero.png",
   docsDir: "src",
   fullscreen: true,
 
@@ -39,7 +39,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "赣ICP备2022003118号-1",
+      footer: "赣ICP备",
 
       displayFooter: true,
 
@@ -60,7 +60,7 @@ export default hopeTheme({
 
   plugins: {
     copyright: {
-      author: "知Code",
+      author: "NODE1",
       global: true,
     },
     markdownTab: true,

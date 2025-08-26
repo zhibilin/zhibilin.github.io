@@ -1,15 +1,15 @@
 ---
 home: true
 portfolio: true
-title: Home
+title: NODE1
 icon: home
-welcome: welcome 
-name: note | docs | node
+welcome: Why Choose Node1?
+name: BLOCKCHAIN| NODE | STAKING
 avatar: https://vuepress.vuejs.org/images/hero.png
 titles:
-  - 👋API
-  - 🚀Coding
-  - ✨Node
+  - 👋 Services on the blockchain
+  - 🚀 Global Infrastructure
+  - ✨ High TPS Capacity
 links:
 footer: false
 ---

@@ -1,10 +1,10 @@
 ---
-title: 代码生成器
+title: code generator
 icon: fab fa-markdown
 order: 2
 cover: https://github.githubassets.com/assets/inbox-zero-86555dddc82e.svg
 category:
-  - note
+  - sample
 tag:
   - demo sample
 ---
