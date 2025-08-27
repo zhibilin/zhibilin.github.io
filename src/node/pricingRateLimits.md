@@ -21,7 +21,7 @@ tag:
 
 
 
-## staked_conn
+## Staked Conn
 The usage of the staked_conn interface is similar to the RPC interface, primarily providing the sendTransaction method, which directly connects to our validator node.
 When calling the sendTransaction method of staked_conn, please note the following:
 - Minimum tip 0.002, tps rate 5
@@ -36,7 +36,7 @@ When calling the sendTransaction method of staked_conn, please note the followin
     - `node1YtWCoTwwVYTFLfS19zquRQzYX332hs1HEuRBjC`
 
 
-## Example for cmd: curl
+## Example for CMD: `curl`
 
 ```shell
 curl -X POST "https://ny.node1.me" \

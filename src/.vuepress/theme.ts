@@ -17,14 +17,14 @@ export default hopeTheme({
   // 是否在导航栏内显示仓库链接，默认为 `true`
   repoDisplay: true,
   author: {
-    name: "NODE1 bLOG",
+    name: "NODE1 BLOG",
     url: "node1.me",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   // logo: "https://vuepress.vuejs.org/images/hero.png",
-logo: "https://github.com/zhibilin/zhibilin.github.io/blob/main/src/.vuepress/public/gray_logo.png?raw=true",
+  logo: "https://github.com/zhibilin/zhibilin.github.io/blob/main/src/.vuepress/public/gray_logo.png?raw=true",
   docsDir: "src",
   fullscreen: true,
 
