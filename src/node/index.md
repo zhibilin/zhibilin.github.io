@@ -15,11 +15,11 @@ tag:
 From traders, for traders (从交易者，为交易者) - that's the Node1 promise.
 > **Features:**
 
-- ` Simple.`
+- `Professional.`
 
-- `scalable pricing.`
+- `Safer.`
 
-- `scalable pricing.`
+- `Faster.`
 
 
 :::
